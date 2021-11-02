@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CALCULATOR</string>
+    <string name="titleName">Calculator</string>
+    <string name="numberOne">1</string>
+    <string name="numberTwo">2</string>
+    <string name="numberThree">3</string>
+    <string name="numberFour">4</string>
+    <string name="numberFive">5</string>
+    <string name="numberSix">6</string>
+    <string name="numberSeven">7</string>
+    <string name="numberEight">8</string>
+    <string name="numberNine">9</string>
+    <string name="numberZero">0</string>
+    <string name="numberDecimal">.</string>
+    <string name="allClear">Clear</string>
+    <string name="OperationTitle">Operations</string>
+    <string name="multiplySign">×</string>
+    <string name="divideSign">÷</string>
+    <string name="minusSign">-</string>
+    <string name="addSign">+</string>
+    <string name="equalSign">=</string>
+    <string name="AdditionalTitle">Additional Functionalities</string>
+    <string name="sqRootSign">√x</string>
+    <string name="squareSign">x<sup>2</sup></string>
+    <string name="piSign">𝜋</string>
+    <string name="sinSign">sin</string>
+    <string name="cosSign">cos</string>
+    <string name="tanSign">tan</string>
+</resources>

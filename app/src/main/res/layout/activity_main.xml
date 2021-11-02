@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--Using a combination of ScrollView, Linear Layouts and Table Views to structure all elements -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+<!--Spacing from top of the screen-->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+<!--OperationHistory textview - this shows the entire expression, which is slightly grayed out-->
+            <TextView
+                android:id="@+id/operationHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="#D1D1D1"
+                android:textSize="30sp" />
+<!--Spacing between elements-->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+<!--inputField TextView to display entered values result-->
+            <TextView
+                android:id="@+id/inputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+<!--A dividing line between the TextViews area and button area-->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#6C94A8" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+<!--Buttons are arranged in a table layout, with spacing in middle and ends-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<!-- Each rows contain three buttons-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!--numbers 1 to 3-->
+                    <Button
+                        android:id="@+id/numberOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberOne"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberOne" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberTwo"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberTwo" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberThree"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberThree" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!--numbers 4 to 6-->
+                    <Button
+                        android:id="@+id/numberFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberFour"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberFour" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberFive"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberFive" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberSix"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberSix" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!-- Numbers 7 to 9-->
+                    <Button
+                        android:id="@+id/numberSeven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberSeven"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberSeven" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberEight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberEight"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberEight" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberNine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberNine"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberNine" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!-- Clear, number 0 and decimal point buttons-->
+                    <Button
+                        android:id="@+id/allClear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#8BC34A"
+                        android:text="@string/allClear"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/allClear" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberZero"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberZero" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/numberDecimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A1028FBA"
+                        android:text="@string/numberDecimal"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/numberDecimal" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </TableRow>
+            </TableLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+<!-- A textview to show below are operator buttons-->
+            <TextView
+                android:id="@+id/operationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/OperationTitle"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/OperationTitle" />
+
+<!-- The first row in this table layout contains three buttons and second row contains two buttons-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!-- multiply, divide and subtract buttons-->
+                    <Button
+                        android:id="@+id/multiplySign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D53456AE"
+                        android:text="@string/multiplySign"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/multiplySign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/divideSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D53456AE"
+                        android:text="@string/divideSign"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/divideSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/minusSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D53456AE"
+                        android:text="@string/minusSign"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/minusSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!-- Add button and equal button-->
+                    <Button
+                        android:id="@+id/addSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D53456AE"
+                        android:text="@string/addSign"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/addSign"
+                        android:layout_weight="1" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"/>
+
+                    <Button
+                        android:id="@+id/equalSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A8FF5722"
+                        android:text="@string/equalSign"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/equalSign"
+                        android:layout_weight="1"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+<!-- A text view to show below are additional functionalities available in this calculator-->
+            <TextView
+                android:id="@+id/additionalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AdditionalTitle"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/AdditionalTitle" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!-- square root, square and pi buttons-->
+                    <Button
+                        android:id="@+id/sqRootSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/sqRootSign"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/sqRootSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/squareSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/squareSign"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/squareSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/piSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/piSign"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/piSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+<!--sin, cos and tan buttons-->
+                    <Button
+                        android:id="@+id/sinSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/sinSign"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/sinSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/cosSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/cosSign"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/cosSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/tanSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E1C1AFE3"
+                        android:text="@string/tanSign"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="@string/tanSign" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
